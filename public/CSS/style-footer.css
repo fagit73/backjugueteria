@@ -1,0 +1,182 @@
+
+/* *****Estilos del footer****************************** */
+main{
+  min-height: 70vh;
+}
+ 
+footer{
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+.titulos-footer{
+  font-weight: 300;
+  display: inline-block;
+  padding-bottom: .6rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.titulos-footer:before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 0%;
+  border-bottom: .2rem solid var(--Azul-0000e6);
+}
+
+.sobre-mi p{
+  font-size: 1rem;
+  line-height: 1.4rem;
+  padding-bottom: 1rem;
+  color:var(--ffffff-Blanco);
+}
+
+.redes-sociales{
+  display: flex;
+  gap: 1rem;
+  margin: .5rem 0;
+}
+
+.redes-sociales a{
+  padding: .6rem;
+  background-color: var(--Morado-5939e7);
+  border-radius: .2rem;
+}
+
+.redes-sociales a:hover{
+  background-color:var(--Azul-0000e6);
+}
+
+.fa-brands{
+  font-size: 1.3rem;
+  color:var(--white-color);
+}
+
+.navegacion li, .sobre-mi li {
+  list-style-type: none;
+}
+
+.navegacion li a{
+  display: inline-block;
+  margin-bottom: .8rem;
+  color: var(--ffffff-Blanco);
+  text-decoration: none;
+}
+
+.navegacion li a:hover{
+  color: var(--white-color);
+}
+
+.informacion-contacto li{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.informacion-contacto p{
+  color:var(--ffffff-Blanco);
+}
+
+.fa-solid{
+  font-size: 1.2rem;
+  max-height: 1rem;
+  max-width: 1rem;
+}
+
+.copy{
+  text-align: center;
+  font-size: .9rem;
+  line-height: 1.4rem;
+  background-color:var(--ffffff-Blanco);
+  background-color: var(--azulOscuro214458);
+  padding: .5rem;
+}
+
+@media (min-width: 700px){
+  .contenedor{
+      flex-direction: row;
+  }
+  .sobre-mi{
+      width: 40%;
+  } 
+}
+/* *****Estilos de Promociones****************************** */
+
+/* ****Estilos de Promociones***************************** */
+
+h2{
+color: var(--text-color);
+text-align: center;
+margin: 20px;
+padding: 20px;
+} 
+
+.landing-promos ul{
+display:flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.landing-promos img{
+          display: block;
+          width:100%;
+          max-width: 400px;
+      }
+.landing-promos ul{
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          margin-bottom: 16px;
+          padding: 30px;            
+      }
+      
+.landing-promos ul li {
+          display: block;
+          overflow: hidden;
+          transition: all .3s ease
+      }
+.landing-promos ul li img {
+          transition: all .3s ease
+      }
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .landing-promos img {
+      max-width: 400px;
+}
+    .landing-promos ul {
+      justify-content: center;
+    }
+}
+
+@media(min-width: 768px){
+          .landing-promos ul{
+              flex-direction: row
+          }
+          .landing-promos ul li:not(:last-child){
+              margin-right: 16px
+          }
+          .landing-promos ul li:hover img{
+              transform: scale(1.1);
+              filter: brightness(1.15);
+           }
+          .landing-promos img {
+              max-width: 400px;
+          }
+          .landing-promos ul {
+            justify-content: center;
+          }
+      }

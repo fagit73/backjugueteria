@@ -1,0 +1,95 @@
+:root {
+    /* Colores primarios */
+    --primary-color: rgb(0,136,204);
+    --secondary-color: rgb(87, 165, 205);
+    --accent-color: rgb(255, 0, 0); 
+
+    /* Colores de fondo */
+    --background-color: rgb(255, 255, 255);
+    --dark-color: rgb(21, 21, 21);
+    --white-color: rgb(255, 255, 255);
+    --yellow-color:rgb(242, 198, 65);
+    --green-color: rgb(60, 217, 54);
+
+
+    /* Colores de texto */
+    --text-color: rgb(34, 34, 34);
+    --secondary-text-color: rgb(255, 255, 255);
+
+    /* Colores de grises */
+    --gray-light-color: rgb(243, 243, 243);
+    --gray-color: rgb(204, 204, 204);
+    --gray-dark-color: rgb(102, 102, 102);
+    --black-color: rgb(0, 0, 0);
+
+    /* Otros */
+    --box-shadow: rgba(0, 0, 0, 0.25);
+    --link-color: rgb(250, 250, 245);
+    --title-color: rgb(51, 51, 51);
+
+  /* Colores del footer -( pasar a variables)*/
+    --Azul-0000e6: rgb(0, 0, 230); 
+    --gris-e0e0e0: rgb(224, 224, 224);
+    --Morado-5939e7: rgb(89, 57, 231) ;
+    --ffffff-Blanco: rgb(255, 255, 255);
+    --azulOscuro214458: rgb(33, 68, 88);
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--background-color);
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+   
+}
+
+#productos-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    margin:20px auto;
+    justify-content: center;
+   
+}
+
+.tarjeta-producto{
+    max-width: 300px;
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    padding:10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.228);
+    transition: 200ms;
+}
+
+.tarjeta-producto:hover{
+    translate: 0 -10px;
+    box-shadow: 0 10px 5px rgb(0, 0, 0, 0.228);
+}
+
+h3{
+    margin:6px 0;
+    color: var(--text-color);
+}
+
+.tarjeta-producto img {
+    width:90%;
+    height: auto;
+    
+}
+
+.tarjeta-producto p {
+    color:var(--text-color);
+}
+
+.tarjeta-producto button {
+    background-color:var(--accent-color);
+    color:var(--secondary-text-color);
+    padding: 5px 10px;
+    border: unset;
+    border-radius:5px;
+    cursor: pointer;
+}
+

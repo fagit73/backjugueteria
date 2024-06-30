@@ -1,0 +1,133 @@
+:root {
+  /* Colores primarios */
+  --primary-color: rgb(0,136,204);
+--secondary-color: rgb(87, 165, 205);
+--accent-color: rgb(255, 0, 0); 
+
+  /* Colores de fondo */
+  --background-color: rgb(255, 255, 255);
+  --dark-color: rgb(21, 21, 21);
+  --white-color: rgb(255, 255, 255);
+  --yellow-color:rgb(242, 198, 65);
+  --green-color: rgb(60, 217, 54);
+
+
+  /* Colores de texto */
+  --text-color: rgb(34, 34, 34);
+  --secondary-text-color: rgb(255, 255, 255);
+
+  /* Colores de grises */
+--gray-light-color: rgb(243, 243, 243);
+--gray-color: rgb(204, 204, 204);
+--gray-dark-color: rgb(102, 102, 102);
+--black-color: rgb(0, 0, 0);
+
+  /* Otros */
+--box-shadow: rgba(0, 0, 0, 0.25);
+--link-color: rgb(250, 250, 245);
+--title-color: rgb(51, 51, 51);
+
+/* Colores del footer -( pasar a variables)*/
+--Azul-0000e6: rgb(0, 0, 230); 
+--gris-e0e0e0: rgb(224, 224, 224);
+--Morado-5939e7: rgb(89, 57, 231) ;
+--ffffff-Blanco: rgb(255, 255, 255);
+--azulOscuro214458: rgb(33, 68, 88);
+}
+
+
+
+
+#cart-container{
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .tarjeta-producto{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    gap: 20px;
+  }
+  
+  .tarjeta-producto img{
+    height: 100%;
+  }
+  
+  .tarjeta-producto h3{
+    width: 130px;
+    color:var(--text-color);
+  }
+  
+  .tarjeta-producto h3 > span {
+    color: var(--text-color);
+}
+  .precio{
+    color:var(--text-color);
+  }
+
+  .cantidad{
+    color:var(--text-color);
+  }
+
+
+  .tarjeta-producto div{
+    background-color: var(--color-acento-claro);
+    padding: 3px;
+    border-radius: 5px;
+  }
+  
+  #totales{
+    text-align: center;
+    color:var(--text-color);
+  }
+  
+  #carrito-vacio{
+    text-align: center;
+    color:var(--text-color);
+  }
+
+  .escondido{
+    display: none;
+  }
+
+  .boton-comprar, .boton-reiniciar {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid var(--box-shadow);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+ .boton-comprar{
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
+  
+ .boton-reiniciar {
+    background-color: var(--green-color);
+    color: var(--secondary-text-color);
+  }
+
+  .boton-comprar:hover,
+ .boton-reiniciar:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .carrito-vacio  {
+    font-size: 1.1rem;
+
+  }
+  
+  p a {
+    text-decoration: none;
+  }
+
+  p a:hover{
+    color:var(--accent-color)
+  }
+
+  

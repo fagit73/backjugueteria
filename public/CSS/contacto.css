@@ -1,0 +1,227 @@
+ 
+  /* Estilos para contenedores */
+  .form-container-contacto {
+    grid-area: form;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px var(--box-shadow);
+  }
+  
+  .iframe-container h2{
+    text-align: center;
+    color: var(--text-color);
+  }
+  .form-container-contacto h2{
+    text-align: center;
+    
+  }
+  
+  .opening-hours h2{
+    text-align: center;
+    color:var(--secondary-text-color);
+  }
+  
+  .iframe-container {
+    grid-area: iframe;
+    height: 50vh;
+    background-color: var(--background-color);
+    padding: 20px;
+    margin: 5px 30px;
+    border: 1px solid var(--gray-dark-color);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .iframe-container iframe {
+    width: 98%;
+  }
+  
+  .opening-hours {
+    color: var(--secondary-text-color);
+  }
+  
+  /* Estilos para el formulario */
+  .form-container-contacto form {
+    background-color: var(--gray-light-color);
+    padding: 20px 10px 20px 4px;
+    border: thin solid var(--background-color); 
+     box-shadow: 0px 0px 5px var(--box-shadow); 
+    max-width: 710px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .form-container-contacto form label {
+    display: block;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .form-input-contac {
+    width: calc(100% - 22px); /* Se reduce el ancho para compensar el padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1em;
+    color: var(--text-color);
+  }
+  
+  .form-container-contacto form textarea {
+    width: 100%;
+    max-height: 150px;
+    resize: vertical;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  /* Estilo para los botones del formulario */
+  .button-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .form-container-contacto form input[type="submit"],
+  .form-container-contacto form button[type="reset"] {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: 2px solid var(--box-shadow);
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+ .form-container-contacto form input[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
+  
+  form button[type="reset"] {
+    background-color: var(--green-color);
+    color: var(--secondary-text-color);
+  }
+  
+ .form-container-contacto form input[type="submit"]:hover,
+ .form-container-contacto form button[type="reset"]:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Estilos para la tabla de horario de atención */
+  table {
+    width: 100%;
+    border: 1px solid var(--gray-light-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+  }
+  
+  th, td {
+    padding: 8px;
+    color: var(--secondary-text-color);
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    text-align: center;
+  }
+  
+  td {
+    border-bottom: 1px solid var(--gray-light-color);
+  }
+  
+  td:last-child {
+    border-bottom: none;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 767px) {
+    .contact-grid-container {
+      display: grid;
+      grid-template-areas:
+        "form"
+        "iframe"
+        "hours";
+    }
+    
+    .form-container-contacto {
+      width: 95%;
+    }
+  
+    .opening-hours {
+      width: 90%;
+    }
+  
+    .iframe-container {
+      max-width: 90%;
+      overflow: hidden;
+    }
+  
+    .iframe-container iframe {
+      width: 100%;
+      height: 100%;
+    }
+  
+    table {
+      width: 100%;
+      max-width: 600px;
+    }
+  
+    th, td {
+      padding: 12px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact-grid-container {
+      display: grid;
+      grid-template-areas:
+        "form"
+        "iframe"
+        "hours";
+    }
+  
+    .form-container-contacto,
+    .iframe-container,
+    .opening-hours {
+      width: 90%;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    table {
+      justify-content: center;
+    }
+  
+    .form-container-contacto form {
+      justify-content: center;
+      max-width: 900px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .contact-grid-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+        "form iframe"
+        "form hours";
+      margin: 40px 15%;
+    }
+  
+    .form-container-contacto {
+      height: 100%;
+      margin: 0;
+    }
+  
+    .iframe-container iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  

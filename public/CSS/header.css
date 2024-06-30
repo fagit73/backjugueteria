@@ -1,0 +1,381 @@
+/******************Estilos section Top*******************/
+.top-section {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px;
+  background-color: var(--azulOscuro214458);
+  color:var(--gray-light-color) 
+}
+
+.social-icons,
+.promotions,
+.contact-info {
+  display: flex; 
+  align-items: center; 
+}
+
+.social-icons a,
+.promotions p,
+.contact-info p {
+  margin:0.3em 0.6em; 
+}
+
+
+/************** Estilos para NAVs ***********/
+.nav,.nav-menu  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  
+}   
+.nav{
+  background-color: var(--gray-light-color);
+  color: var(--accent-color);
+  max-height: 20rem; 
+  width: 100%;
+  box-shadow: 0 2px 6px var(--box-shadow);
+}
+ 
+.nav-menu{  
+  background-color: var(--yellow-color);
+  color: var(--text-color);  
+  padding:1rem;
+  box-shadow: 0 2px 6px var(--box-shadow);
+  margin-bottom:1rem;
+}
+/******** Estilos logo*******/
+.logo  {
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo img {
+  min-width: 30px;
+  max-width: 230px;
+  height: auto;
+  margin:2rem;
+}
+.logo:hover img {
+  animation: animateLogo 2s ease; 
+}
+@keyframes animateLogo {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+.nav .logo a {
+  display: inline-block; /* Hace que la etiqueta <a> tenga solo el ancho del contenido */
+  justify-content: center;
+}
+.logo-jugueteria{
+  display:none;
+}
+
+.word1 {
+  font-family: Arial, sans-serif; 
+  font-weight: bold; 
+  color: var(--primary-color); 
+  border-color: var(--gray-dark-color);
+  font-size: 2.2rem; 
+}
+
+
+.contorno {   
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; /* Contorno */
+}
+
+
+.fredoka {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;  
+  font-variation-settings:
+    "wdth" 200;
+}
+.brand-info{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+}
+.brand-info p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.1rem;   
+  padding-left: 1rem;
+}
+#textoAnimado {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:var(--primary-color); 
+}
+.grupo-logo{
+  display: flex;
+  align-items: center;
+}
+/************Barra de busqueda**********/
+.search {
+    display: flex;
+    position: relative;    
+}
+
+.search .search-input {
+    padding: 10px 60px;
+    border-radius:20px;
+    border:none;
+}
+
+.search button {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-color);    
+    border-radius:20px;
+    border:none;
+    cursor: pointer;    
+}
+
+.search .search-input::placeholder {
+    color: var(--gray-dark-color);    
+}
+
+#search-input:focus::placeholder{
+    color: transparent;
+    border:none;
+}
+
+.search button img {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.search .search-input:focus {
+    outline: none; /* Elimina el contorno de enfoque predeterminado */
+    border-color: transparent; /* Establece el color del borde a transparente */
+    box-shadow: none; /* Elimina cualquier sombra de la caja */
+}
+
+
+/*************Login del NAV**********/
+/* Estilos generales para los botones */
+
+.user{
+  display:flex;  
+  align-items: center;
+  justify-content: center ;
+  margin-right: 3rem;
+}
+
+.login button {
+  background-color:var(--primary-color); 
+  color: var(--white-color); 
+  border: none; 
+  padding: 0.5rem 1.2rem; 
+  border-radius: 0.2rem; 
+  cursor: pointer; 
+  font-size: 1rem; 
+  transition: background-color 0.3s; 
+}
+
+/* Estilos al pasar el mouse por encima */
+.user button:hover {
+  background-color: var(--secondary-color); 
+  
+}
+.loguito-PZ{
+  width: 35px;
+}
+
+
+/* Estilos para el botón de "Registrarse" */
+
+ .login-dropdown {
+  display: none;
+  position: absolute;
+  background-color: var(--gray-light-color);
+  padding: 10px;
+  border: 1px solid var(--gray-dark-color);
+}
+ .login-dropdown a {
+  display: block; /* Hace que los enlaces ocupen toda la anchura disponible */
+  padding: 5px 0; 
+  margin: 5px 0; 
+  text-align: center;
+  text-decoration: none;
+  color:var(--green-color);
+  font-weight: 700;
+ }
+  
+
+  /* Estilos para el carrito de compras */
+
+.cart {
+  position: relative;
+  margin-left: 1rem;
+}
+.cart img {
+  width: 30px;
+  vertical-align:middle  
+}
+.cart-count {
+  position: absolute;
+  top: -15px;
+  right:-10px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 14px;
+} 
+/************Estilos NAV-menu*************/
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center; 
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a{
+  font-weight:800;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--title-color);
+}
+.nav-menu{
+  display:flex;
+  justify-content:space-around;    
+}
+
+.nav-menu img{
+  width: 3rem;
+  vertical-align:middle;  
+}
+
+.deskstop{
+  display: block;
+}
+
+#toggle-menu-mobile{
+  display:none;
+}
+.ocultar{
+  display: none;
+}
+
+.ocultar img{
+  width: 30px;
+  
+}
+
+.ocultar .search-input{
+  border-radius: 10px;
+  padding:5px;
+}
+
+#search-button{
+  border-radius: 10px;
+}
+
+.nav-menu{
+  line-height: 30px;
+}
+/*********media querries*********************************/
+
+@media (max-width: 1100px){
+  
+  
+  #toggle-menu-mobile, .brand-info{
+    display:none;
+  }
+  .deskstop{
+    display:block;
+  }
+  .logo img{
+    display:none;
+  }
+  .logo-jugueteria{
+    display:block;
+  }
+  .logo-jugueteria img{
+    min-width: 30px;
+    max-width: 230px;
+    margin-bottom: 10px;
+  }
+  
+  .user{
+    display:flex;
+    flex-direction:row;
+  }
+  .search .search-input {
+    padding: 10px 30px;
+    border-radius:20px;
+    border:none;
+  } 
+  .login button{
+    font-size: 0.8rem;
+  }
+  .promotions, .contact-info{
+    display:none;
+  }
+  
+}
+@media (max-width: 676px){
+  #nav{
+    justify-content:space-around;
+  }
+  
+  
+  #toggle-menu-mobile{
+    display:block;
+    background-color: var(--accent-color);
+    border:none;
+    border-radius:5px;
+  
+  }
+  
+  #toggle-menu-mobile img{
+    height: 18px;
+  
+  }
+
+  
+  #header-link-deskstop, .mobile, .deskstop, .nav-links{
+    display:none;
+  }
+  
+  .nav-menu ul{
+    flex-direction: column;
+   
+  }
+  
+  .ocultar{
+    display:block;
+  }
+  .logo-jugueteria{
+    display:block;
+  }
+  
+}   
+  
+  
+  
+  
